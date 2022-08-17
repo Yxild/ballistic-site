@@ -6,39 +6,68 @@ import Card from '../components/Card.astro';
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
-<Layout title="Welcome to Ballistic.">
-	<main>
-		<nav class="navbar bg-dark">
-  		<div class="container-fluid">
-    		<a class="navbar-brand" href="#">
-      	<img src="/docs/5.2/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">Bootstrap</a>
+<Layout title="Ballistic - Home">
+	<nav class="navbar navbar-dark navbar-expand bg-dark fixed-top">
+  	<div class="container-fluid">
+			<img src="https://media.discordapp.net/attachments/985589240115122256/1004556306859970611/unknown.png" style="width:40px;height:40px;">
+    	<a class="navbar-brand text-gradient" href="#">Ballistic</a>
+    	<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+      <span class="navbar-toggler-icon"></span>
+    	</button>
+    		<div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+      		<div class="offcanvas-header">
+        		<h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+        		<button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      		</div>
+      		<div class="offcanvas-body">
+        		<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          		<li class="nav-item">
+            		<a class="nav-link active" aria-current="page" href="#">Home</a>
+          		</li>
+          		<li class="nav-item">
+            		<a class="nav-link" href="#">About</a>
+          		</li>
+							<li class="nav-item">
+            		<a class="nav-link" href="#">Development</a>
+          		</li>
+							<li class="nav-item">
+            		<a class="nav-link" href="#">Pricing</a>
+          		</li>
+        		</ul>
+      		</div>
+    		</div>
   		</div>
-		
 		</nav>
-		<div class="card" style="width: 18rem;">
-  		<div class="card-body">
-    		<h5 class="card-title">Card title</h5>
-    		<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-    		<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    		<a href="#" class="btn btn-primary">Link</a>
-  		</div>
+		<div class="div_main">
+			<center>
+				<h1 style="flex: 0 0 120px;">
+				Welcome to <p class="text-gradient">Ballistic</p></h1>
+			</center>
 		</div>
-	</main>
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#212529" fill-opacity="1" d="M0,224L48,213.3C96,203,192,181,288,186.7C384,192,480,224,576,250.7C672,277,768,299,864,298.7C960,299,1056,277,1152,266.7C1248,256,1344,256,1392,256L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
 </Layout>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 	:root {
 		--astro-gradient: linear-gradient(0deg, #4f39fa, #da62c4);
+	}
+
+	body {
+		font-family: 'Roboto', sans-serif;
 	}
 
 	h1 {
 		margin: 2rem 0;
 	}
 
-	main {
-		margin: auto;
-		padding: 1em;
-		max-width: 60ch;
+	.div_main {
+		color: #fff;
+  	height: 280px;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+		background-color: #212529;
 	}
 
 	.text-gradient {
