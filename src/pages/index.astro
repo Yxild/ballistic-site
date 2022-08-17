@@ -38,6 +38,11 @@ import Card from '../components/Card.astro';
 		<center>
 			<h1 style="flex: 0 0 120px;">
 			Welcome to <p class="text-gradient">Ballistic</p></h1>
+	 <p class="opacity-50 text-bg-dark text-capitalize text-center">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ex harum 
+    </p>
+		<button class="btm-main"> Button
+			</button>
 		</center>
 	</div>
 	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#212529" fill-opacity="1" d="M0,224L48,213.3C96,203,192,181,288,186.7C384,192,480,224,576,250.7C672,277,768,299,864,298.7C960,299,1056,277,1152,266.7C1248,256,1344,256,1392,256L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
@@ -109,4 +114,31 @@ import Card from '../components/Card.astro';
 		gap: 1rem;
 		padding: 0;
 	}
+	.btm-main{
+
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.btm-main:hover {
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.btm-main:active {
+  transform: translateY(-1px);
+}
 </style>
