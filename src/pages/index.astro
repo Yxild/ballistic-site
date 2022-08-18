@@ -7,7 +7,8 @@ import Card from '../components/Card.astro';
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
 <Layout title="Ballistic - Home">
-<iframe src="SONG.mp3" type="audio/mp3" allow="autoplay" id="audio" style=”display:none”></iframe>
+
+<iframe src="https://www.mboxdrive.com/SONG.mp3" type="audio/mp3" allow="autoplay" id="audio" class="iframe_music"></iframe>
         <nav class="navbar navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand text-gradient" href="#">
@@ -188,6 +189,13 @@ body {
     
 h1 {
   margin: 2rem 0;
+}
+
+.iframe_music {
+  position: absolute;
+  width:0;
+  height:0;
+  border:0;
 }
     
 .div_main {
